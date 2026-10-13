@@ -49,7 +49,6 @@ export default defineConfig({
           { text: 'Download & Install', link: '/download' },
           { text: 'Android Setup', link: '/android' },
           { text: 'iOS Setup', link: '/ios' },
-          { text: 'Vysor Dongle', link: '/dongle' },
         ],
       },
       {
