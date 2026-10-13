@@ -17,7 +17,7 @@ options and trial terms to be confirmed before publishing. -->
 | Screenshots | ✅ | ✅ |
 | High quality mirroring |  | ✅ |
 | Fullscreen |  | ✅ |
-| [Wireless mirroring](/android#wireless) |  | ✅ |
+| [Wireless mirroring](/manual/wireless) |  | ✅ |
 | Audio mirroring |  | ✅ |
 | Screen recording |  | ✅ |
 | Desktop notifications |  | ✅ |

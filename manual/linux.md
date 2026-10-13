@@ -4,7 +4,7 @@ description: "Installing Vysor on Linux (deb and AUR packages), and setting up t
 
 # Linux Installation
 
-Vysor is available as a deb package, or (unofficially) via the Arch User Repository: <https://www.vysor.io/download/linux>
+The Vysor desktop app for Linux is the deb package from the [download page](/download).
 
 ## Virtual Camera
 

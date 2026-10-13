@@ -41,7 +41,7 @@ The desktop app's Android connectivity goes through ADB and does not require Pla
 
 ## What works in the web app versus the desktop app?
 
-The [web app](https://app.vysor.io) mirrors and controls devices, including devices shared with you ([Vysor Share](/share)). Switching a local device to [wireless](/android#wireless) and connecting by network address are desktop app features. iOS mirroring is available in the desktop app. <!-- TODO(verify): clarify current iOS support in the web app. -->
+The [web app](https://app.vysor.io) mirrors and controls devices, including devices shared with you ([Vysor Share](/share)). Switching a local device to [wireless](/manual/wireless) and connecting by network address are desktop app features. iOS mirroring is available in the desktop app. <!-- TODO(verify): clarify current iOS support in the web app. -->
 
 ## Where do I report bugs?
 

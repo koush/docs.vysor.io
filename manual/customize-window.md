@@ -17,3 +17,7 @@ If your Android device already has a built-in navigation bar, the one Vysor draw
 ## Pin Title Bar
 
 Toggle this to make the title bar stay pinned, or to have it disappear when not in use.
+
+## Device Settings
+
+While mirroring, device-specific settings are available in the Vysor device window for bitrate, resolution, decoder, notifications, and more. See [Vysor Pro](/pro) for settings unlocked with a Pro license. Video quality tuning tips are in [Video Quality](/manual/video-quality).

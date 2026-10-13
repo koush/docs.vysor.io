@@ -54,12 +54,12 @@ export default defineConfig({
       {
         text: 'Manual',
         items: [
-          { text: 'Wireless Connections', link: '/manual/wireless' },
           { text: 'Video Quality', link: '/manual/video-quality' },
           { text: 'Copy and Paste', link: '/manual/copy-paste' },
           { text: 'Drag and Drop Files', link: '/manual/drag-and-drop' },
           { text: 'Screen Recording', link: '/manual/screen-recording' },
           { text: 'Multitouch', link: '/manual/multitouch' },
+          { text: 'Controlling iOS', link: '/manual/ios-control' },
           { text: 'Window Settings', link: '/manual/customize-window' },
           { text: 'Customizing Vysor', link: '/manual/customize' },
           { text: 'Video Broadcasting (OBS)', link: '/manual/obs' },

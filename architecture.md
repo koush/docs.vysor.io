@@ -32,7 +32,7 @@ Devices with multiple displays (for example, an app presented on a secondary dis
 
 ## Wireless
 
-Wireless mirroring uses **ADB over TCP/IP**: after an initial USB connection, Vysor instructs the device's ADB daemon to listen on the network (port 5555) and reconnects to the device over the local network. The session migrates from USB to the network connection without restarting. See [Android Setup: Wireless](/android#wireless).
+Wireless mirroring uses **ADB over TCP/IP**: after an initial USB connection, Vysor instructs the device's ADB daemon to listen on the network (port 5555) and reconnects to the device over the local network. The session migrates from USB to the network connection without restarting. See [Android Setup: Wireless](/manual/wireless).
 
 Because this is a plain network connection to the ADB daemon, the device and the computer must be able to reach each other on the network. Connections across different networks are handled by [Vysor Share](/share).
 
@@ -40,9 +40,9 @@ Because this is a plain network connection to the ADB daemon, the device and the
 
 iOS does not have an ADB-like debugging interface, so Vysor mirrors iOS through the [Vysor iOS app](https://apps.apple.com/us/app/vysor/id1577813680): the app records the screen (a permission iOS requires the user to grant) and streams it to the computer over USB.
 
-iOS mirroring is **view-only**: the screen is streamed and audio can be mirrored, but iOS does not allow an app to inject touch input. As a companion feature, Vysor can control iOS through a **Bluetooth HID connection**: the iOS device is paired to a [Vysor Dongle](/ios#vysor-dongle) as a Bluetooth keyboard and mouse, and Vysor uses that connection to move the iOS pointer. iOS then interprets the input as assistive-input, which is why an accessibility control cursor appears on the device.
+iOS mirroring is **view-only**: the screen is streamed and audio can be mirrored, but iOS does not allow an app to inject touch input. As a companion feature, Vysor can control iOS through a **Bluetooth HID connection**: the iOS device is paired to a [Vysor Dongle](/manual/ios-control#vysor-dongle) as a Bluetooth keyboard and mouse, and Vysor uses that connection to move the iOS pointer. iOS then interprets the input as assistive-input, which is why an accessibility control cursor appears on the device.
 
-Follow the in-app prompts to pair and [calibrate the control cursor](/ios#calibrating-the-control-cursor). This is optional — Vysor can be used for mirroring only.
+Follow the in-app prompts to pair and [calibrate the control cursor](/manual/ios-control#calibrating-the-control-cursor). This is optional — Vysor can be used for mirroring only.
 
 ## Vysor Share
 
