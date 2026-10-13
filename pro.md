@@ -29,7 +29,7 @@ options and trial terms to be confirmed before publishing. -->
 
 ## Purchasing
 
-Log in to Vysor with your Google or Apple account and click **Upgrade** to purchase Vysor Pro. Licenses are per-account and can be used on all of your devices. <!-- TODO(verify): purchase options (monthly/annual/lifetime) per the approved pricing before publishing. -->
+Log in to Vysor and click **Upgrade** to purchase Vysor Pro. Licenses are per-account and can be used on all of your devices. <!-- TODO(verify): purchase options (monthly/annual/lifetime) per the approved pricing before publishing. -->
 
 ## Managing Your License
 
