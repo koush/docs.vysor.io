@@ -1,10 +1,20 @@
+---
+description: "Downloading Vysor: desktop installers for Windows and macOS, the browser web app, and the Android APK."
+---
+
 # Download & Install
 
 Vysor is available as a desktop application for Windows, macOS, and Linux, and as a web app that runs entirely in your browser.
 
 ## Desktop Application
 
-Download the Vysor desktop application from [www.vysor.io](https://www.vysor.io/). The desktop app communicates with devices over USB with the [ADB](https://developer.android.com/tools/adb) (Android Debug Bridge) platform tools, which it manages automatically.
+The Vysor desktop application installers for Windows, macOS, and Linux are published on [GitHub](https://github.com/koush/vysor.io/releases/latest):
+
+- **macOS:** `Vysor-mac-x.x.x.dmg`
+- **Windows:** `Vysor-win-x.x.x.exe`
+- **Linux:** `Vysor-linux-x.x.x.deb`
+
+The desktop app communicates with devices over USB with the [ADB](https://developer.android.com/tools/adb) (Android Debug Bridge) platform tools, which it manages automatically.
 
 ## Web App
 
