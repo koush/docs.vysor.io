@@ -68,7 +68,9 @@ These boards have been tested and confirmed to work with Vysor. Note that produc
 
 #### NRF52840
 
-Plug in the **Nordic dongle** and press the **reset button** (the sideways button next to the main switch) to enter the bootloader. Flash the [hex flash file](https://app.vysor.io/native/dongle/nrf52840dongle_nrf52840/zephyr.hex) using [nRF Connect Programmer](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-desktop/Download).
+**Nordic dongle:** plug in the device and press the **reset button** (the sideways button next to the main switch) to enter the bootloader. Flash the [hex flash file](https://app.vysor.io/native/dongle/nrf52840dongle_nrf52840/zephyr.hex) using [nRF Connect Programmer](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-desktop/Download).
+
+**MakerDiary dongle:** unplug the dongle, then press and hold the dongle button while inserting it into the computer. The LED should be lit (on uncased dongles there are two LEDs, one of which is power — both should be lit). If the LED is not lit, double-click the button to start the bootloader. A removable storage drive (for example, `MDK_DONGLE`) will appear on the computer — copy this [UF2 flash file](https://app.vysor.io/native/dongle/nrf52840_mdk_dongle/zephyr.uf2) onto the drive to flash. The dongle reboots automatically and the drive disconnects.
 
 #### ESP32
 
