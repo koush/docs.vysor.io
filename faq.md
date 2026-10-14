@@ -27,13 +27,9 @@ Screen mirroring and control of Android devices, and screenshots, work without a
 
 Vysor Pro is a per-user license that unlocks all the product features. Enterprise is per-seat licensing for teams and adds organizational controls — web-based management of who can access your shared device servers, and organization-managed seats. See [Enterprise](/enterprise).
 
-## Why a subscription instead of a one-time purchase?
-
-<!-- TODO(verify): answer with the user-approved explanation of the pricing model (including which one-time purchase options exist). Not answered from third-party or marketing sources. -->
-
 ## Do I need the Android companion app?
 
-Not for USB mirroring — a stock device with USB debugging works. The [Vysor app](https://github.com/koush/docs.vysor.io/releases/latest/download/Vysor-release.apk) provides wireless onboarding conveniences and notification integration. See [How Vysor Works](/architecture#the-android-companion-app).
+Not for USB mirroring — a stock device with USB debugging works. The [Vysor app](https://github.com/koush/docs.vysor.io/releases/latest/download/Vysor-release.apk) adds [audio mirroring](/manual/audio), [desktop notifications](/manual/notifications), the international keyboard, and wireless onboarding conveniences. See [How Vysor Works](/architecture#the-android-companion-app).
 
 ## Does Vysor work without Google Play Services?
 

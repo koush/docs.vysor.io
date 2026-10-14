@@ -10,4 +10,4 @@ Vysor can simulate a second finger for multitouch gestures (pinch to zoom, rotat
 2. Use the mouse to touch and move the second finger.
 3. `Alt` + mouse click again to release the first finger.
 
-Demo: <https://twitter.com/vysorapp/status/1259224506188460032>
+Demo: [Multitouch](https://twitter.com/vysorapp/status/1259224506188460032)

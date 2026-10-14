@@ -21,4 +21,4 @@ Mirroring an Android device requires the device to expose the [ADB](https://deve
 
 Select the device in the device list to begin mirroring. Your device screen appears instantly in the Vysor window and you can control it with your mouse and keyboard.
 
-Once set up over USB, a device can also be switched to [wireless mirroring](/manual/wireless), and per-device settings are available while mirroring — see [Device Settings](/manual/customize-window#device-settings).
+Once set up over USB, a device can also be switched to [wireless mirroring](/manual/wireless), and per-device settings are available while mirroring — see [Settings](/manual/customize-window#settings).

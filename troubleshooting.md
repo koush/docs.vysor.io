@@ -50,7 +50,7 @@ If the mirrored Android screen is black:
 
 ## Wireless Connection Fails
 
-- **"This device is not available wirelessly":** the device rebooted, changed networks, or its address changed — reconnect over USB once and switch it to wireless again. ([Android Setup: Wireless](/android#troubleshooting-wireless-failures))
+- **"This device is not available wirelessly":** the device rebooted, changed networks, or its address changed — reconnect over USB once and switch it to wireless again. ([Wireless Connections](/manual/wireless#troubleshooting-wireless-failures))
 - **Different networks:** the computer and device must be able to reach each other (device's WiFi address, port 5555). For cross-network access, use [Vysor Share](/share).
 - Guest or corporate WiFi that isolates devices from each other will block direct wireless connections.
 

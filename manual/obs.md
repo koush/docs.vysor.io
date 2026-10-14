@@ -1,12 +1,12 @@
 ---
-description: "Importing the Vysor device video stream into Open Broadcast Studio or other broadcast software via the web video stream URL."
+description: "Importing the Vysor device video stream into OBS Studio or other broadcast software via the web video stream URL."
 ---
 
 # Video Broadcasting (OBS)
 
-Vysor exports a flash video stream (FLV/H264) that can be imported into streaming and broadcast software like [Open Broadcast Studio](https://obsproject.com).
+Vysor exports a flash video stream (FLV/H264) that can be imported into streaming and broadcast software like [OBS Studio](https://obsproject.com).
 
-While viewing a device in Vysor, click the **settings** button in the device window, then click the **Web Video Stream** link to get a video URL that can be imported into other applications.
+While viewing a device in Vysor, open the device settings (the **Settings** item in the device window's title bar menu), then copy the **Web Video Stream** URL on the **Device Settings** panel.
 
 In OBS, add a **Media Source** and use the Web Video Stream URL:
 

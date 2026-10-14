@@ -22,13 +22,16 @@ Video decoding on the computer is done in one of three ways, selectable in the d
 
 ### The Android Companion App
 
-The [Vysor Android app](https://github.com/koush/docs.vysor.io/releases/latest/download/Vysor-release.apk) is a companion app: it handles wireless onboarding conveniences and device notifications integration. **It is not required for USB mirroring** — a stock Android device with USB debugging enabled is fully supported.
+The [Vysor Android app](https://github.com/koush/docs.vysor.io/releases/latest/download/Vysor-release.apk) is a companion app. **It is not required for USB mirroring** — a stock Android device with USB debugging enabled is fully supported. Installing it adds:
 
-<!-- TODO(verify): confirm the exact companion-app responsibilities before publishing: the wireless onboarding flow and notification listener integration are the two candidates found in the app code. -->
+- **Audio mirroring** on Android 10 and newer: the app captures device audio and streams it to your computer ([Audio Mirroring](/manual/audio)).
+- **Desktop notifications**: Android notifications are forwarded to your desktop ([Desktop Notifications](/manual/notifications)).
+- **International keyboard**: a Vysor input method for typing non-English characters directly from your desktop keyboard.
+- **Wireless onboarding** conveniences.
 
 ### Multiple Displays
 
-Devices with multiple displays (for example, an app presented on a secondary display, or desktop-mode devices) enumerate their displays to Vysor. Click the device name in the title bar while mirroring to switch between the device's displays. See [Vysor Pro](/pro#all-displays).
+Devices with multiple displays (for example, an app presented on a secondary display, or desktop-mode devices) enumerate their displays to Vysor. Click the device name in the title bar while mirroring to switch between the device's displays. See [Vysor Pro](/pro#free-vs-pro).
 
 ## Wireless
 

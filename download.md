@@ -8,7 +8,7 @@ Vysor is available as a desktop application for Windows, macOS, and Linux, and a
 
 ## Desktop Application
 
-The Vysor desktop application installers for Windows, macOS, and Linux are available at [vysor.io/download](https://www.vysor.io/download).
+The Vysor desktop application installers for Windows, macOS, and Linux are available at [vysor.io/download](https://www.vysor.io/download). On Linux, the app is distributed as a deb package — see [Linux Installation](/linux) for details and virtual camera setup.
 
 The installers are also published on the [GitHub releases page](https://github.com/koush/vysor.io/releases) for reference.
 

@@ -16,7 +16,7 @@ Sharing requires a Vysor Pro license.
 
 The recipient opens the link (or pastes it under **Connect Shared Device**) and the device appears for them in the device list, ready to mirror. This works from both the desktop app and the [web app](https://app.vysor.io).
 
-To stop sharing, click **Unshare Device** on the device. This immediately terminates the sharer's channel; active sessions are disconnected.
+To stop sharing, click **Unshare Device** on the device. This immediately terminates the share channel; active sessions are disconnected.
 
 ## Sharing All Devices (Device Servers)
 

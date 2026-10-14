@@ -14,14 +14,14 @@ options and trial terms to be confirmed before publishing. -->
 | Feature | Free | Pro |
 |---|:---:|:---:|
 | Mirror and control Android | ✅ | ✅ |
-| Screenshots | ✅ | ✅ |
+| [Screenshots](/manual/screenshots) | ✅ | ✅ |
 | High quality mirroring |  | ✅ |
 | Fullscreen |  | ✅ |
 | [Wireless mirroring](/manual/wireless) |  | ✅ |
-| Audio mirroring |  | ✅ |
-| Screen recording |  | ✅ |
-| Desktop notifications |  | ✅ |
-| Drag and drop files |  | ✅ |
+| [Audio mirroring](/manual/audio) |  | ✅ |
+| [Screen recording](/manual/screen-recording) |  | ✅ |
+| [Desktop notifications](/manual/notifications) |  | ✅ |
+| [Drag and drop files](/manual/drag-and-drop) |  | ✅ |
 | All displays |  | ✅ |
 | [Vysor Share](/share) |  | ✅ |
 

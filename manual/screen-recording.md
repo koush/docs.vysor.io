@@ -8,4 +8,4 @@ description: "Recording the mirrored Android device screen to a video file on yo
 2. Press the **Stop Recording** button to stop.
 3. Vysor downloads the video to your computer.
 
-<https://www.youtube.com/watch?v=N5dLp8mJ6Nw>
+Demo: [Record Video](https://www.youtube.com/watch?v=N5dLp8mJ6Nw)

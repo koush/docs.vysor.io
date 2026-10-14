@@ -47,6 +47,7 @@ export default defineConfig({
         items: [
           { text: 'What is Vysor?', link: '/' },
           { text: 'Download & Install', link: '/download' },
+          { text: 'Linux Installation', link: '/linux' },
           { text: 'Android Setup', link: '/android' },
           { text: 'iOS Setup', link: '/ios' },
         ],
@@ -55,15 +56,17 @@ export default defineConfig({
         text: 'Manual',
         items: [
           { text: 'Video Quality', link: '/manual/video-quality' },
+          { text: 'Audio Mirroring', link: '/manual/audio' },
           { text: 'Copy and Paste', link: '/manual/copy-paste' },
           { text: 'Drag and Drop Files', link: '/manual/drag-and-drop' },
           { text: 'Screen Recording', link: '/manual/screen-recording' },
+          { text: 'Screenshots', link: '/manual/screenshots' },
           { text: 'Multitouch', link: '/manual/multitouch' },
+          { text: 'Desktop Notifications', link: '/manual/notifications' },
           { text: 'Controlling iOS', link: '/manual/ios-control' },
-          { text: 'Window Settings', link: '/manual/customize-window' },
+          { text: 'Device Window', link: '/manual/customize-window' },
           { text: 'Customizing Vysor', link: '/manual/customize' },
           { text: 'Video Broadcasting (OBS)', link: '/manual/obs' },
-          { text: 'Linux Installation', link: '/manual/linux' },
         ],
       },
       {

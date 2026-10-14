@@ -8,4 +8,4 @@ Drag and drop files onto the Vysor device window to open them on the device. Dro
 
 Files are saved to `/sdcard/vysor` (the Vysor directory on the device's shared storage).
 
-<https://www.youtube.com/watch?v=f96jwsH2LNY>
+Demo: [Drag and Drop](https://www.youtube.com/watch?v=f96jwsH2LNY)

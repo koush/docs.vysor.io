@@ -4,7 +4,7 @@ description: "Switching an Android device from USB to wireless mirroring over Wi
 
 # Wireless Connections
 
-Once a device has been set up over USB, it can be switched to wireless mirroring with no cable, and stays usable on the network — including from remote machines over a [Vysor Share](/share) connection. Switching a device to wireless is a Vysor Pro feature and requires the [desktop app](/download).
+Once a device has been set up over USB, it can be switched to wireless mirroring with no cable, and stays usable on the network — including from remote machines over a [Vysor Share](/share) connection. Switching a device to wireless requires the [desktop app](/download).
 
 ## Switching a Device to Wireless
 
@@ -18,11 +18,9 @@ The device remains available wirelessly until it disconnects from the network or
 
 ## Requirements
 
-- **Vysor Pro**, and the desktop app for switching a device to wireless mode.
+- The [desktop app](/download). The web app can mirror wireless devices shared with you, but cannot switch a local device to wireless.
 - The device and the computer must be able to reach each other on the **same network** (Vysor connects to the device's WiFi address on port **5555**).
 - The device must stay on the network it was switched on. If its IP address changes, it must be re-switched over USB. <!-- TODO(verify): document the recommended setup for devices on DHCP (e.g., router-side IP reservation) once confirmed. -->
-
-The in-browser web app can mirror wireless devices shared with you, but switching a local device to wireless is done from the desktop app.
 
 ## Connecting by Address
 
