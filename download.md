@@ -10,11 +10,7 @@ Vysor is available as a desktop application for Windows, macOS, and Linux, and a
 
 The Vysor desktop application installers for Windows, macOS, and Linux are available at [vysor.io/download](https://www.vysor.io/download).
 
-The installers are also published on the [GitHub releases page](https://github.com/koush/vysor.io/releases) for reference:
-
-- **macOS:** `Vysor-mac-x.x.x.dmg`
-- **Windows:** `Vysor-win-x.x.x.exe`
-- **Linux:** `Vysor-linux-x.x.x.deb`
+The installers are also published on the [GitHub releases page](https://github.com/koush/vysor.io/releases) for reference.
 
 The desktop app communicates with devices over USB with the [ADB](https://developer.android.com/tools/adb) (Android Debug Bridge) platform tools, which it manages automatically.
 
