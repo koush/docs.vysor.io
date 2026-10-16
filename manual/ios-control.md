@@ -66,7 +66,7 @@ esptool -p [serial port, e.g. /dev/cu.usbserial-0001 or COM4] -b 460800 \
 
 ## Pointer Control
 
-The mouse maps directly onto the iOS pointer: positions are absolute, so where you point in the Vysor window is where the iOS cursor lands on the device screen. No calibration is needed.
+The mouse maps directly onto the iOS pointer: where you point in the Vysor window is where the iOS cursor lands on the device screen.
 
 The cursor is driven through the device's accessibility features, so **AssistiveTouch must be enabled** on the iOS device for the cursor to be visible ([Settings → Accessibility → Touch → AssistiveTouch](https://support.apple.com/guide/iphone/assistivetouch-iph3e32e842/ios)). The on-screen AssistiveTouch menu can be hidden in the AssistiveTouch settings; pointer control continues to work with the menu hidden.
 
