@@ -43,13 +43,21 @@ These boards have been tested and confirmed to work with Vysor. Note that produc
 2. ESP32 boards are flashed by Vysor automatically when needed — follow the on-screen progress.<!-- Windows users must install the ESP32 driver linked above first. -->
 3. Pair your iOS device to the dongle over Bluetooth: open **Bluetooth Settings** on the iOS device and connect to the dongle (the app shows a pairing request code to confirm). This only needs to be done once; future connections are automatic.
 
-### Manual Flashing
-
-#### NRF52840
+## Nordic NRF52840
 
 Plug in the **Nordic dongle** and press the **reset button** (the sideways button next to the main switch) to enter the bootloader. Flash the [hex flash file](https://app.vysor.io/native/dongle/nrf52840dongle_nrf52840/zephyr.hex) using [nRF Connect Programmer](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-desktop/Download).
 
-#### ESP32
+## Makerdiary nRF52840
+
+1. Download the [Makerdiary UF2 firmware](https://app.vysor.io/native/dongle/nrf52840_mdk_dongle/zephyr.uf2).
+2. Unplug the dongle. Hold its button while plugging it back into your computer, then release the button. The bootloader LED turns green. If the button is configured as RESET, you can also enter the bootloader by pressing it twice within 500 ms while plugged in.
+3. A USB drive named **UF2BOOT** or **MDK-DONGLE** appears, depending on the bootloader version. Its `INFO_UF2.TXT` file identifies the board as **nRF52840 MDK USB Dongle**. If the device still appears only as **Vysor NRF52840** with no USB drive, it is running the application; try entering the bootloader again.
+4. Copy `zephyr.uf2` onto that drive. The drive may disappear as the dongle automatically reboots. If it does not reboot automatically after copying finishes, unplug and reconnect it.
+5. Open Vysor and pair the dongle with your iOS device. After upgrading older firmware, **forget the existing Bluetooth pairing and pair again** so iOS loads the new mouse descriptor.
+
+See also [Makerdiary's UF2 flashing guide](https://wiki.makerdiary.com/nrf52840-mdk-usb-dongle/programming/uf2boot/).
+
+## ESP32
 
 Vysor flashes ESP32 boards automatically, in the app. If that fails, the board can be flashed with [esptool](https://github.com/espressif/esptool) using these images:
 
