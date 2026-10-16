@@ -1,12 +1,12 @@
 ---
-description: "Controlling an iOS device with Vysor: the Vysor Dongle (ESP32 and NRF52840 hardware, flashing, and pairing), and calibrating the control cursor."
+description: "Controlling an iOS device with Vysor: the Vysor Dongle (ESP32 and NRF52840 hardware, flashing, and pairing), and pointer control."
 ---
 
 # Controlling iOS
 
 iOS mirroring is **view-only**: the screen is streamed and audio can be mirrored, but iOS does not allow an app to inject touch input. As a companion feature, Vysor can control the device by pairing with it as a **Bluetooth keyboard and mouse**, using a [Vysor Dongle](#vysor-dongle) — an inexpensive board flashed with Vysor firmware. This is optional; without a dongle, mirroring is view-only. See [How Vysor Works](/architecture#ios).
 
-A dongle is required to control an iOS device. With one, Vysor pairs with the device as a Bluetooth keyboard and mouse, and moves the iOS **pointer** (the assistive-input cursor that iOS shows on screen). Vysor translates your mouse movements into that pointer's motion, and iOS interprets the input as assistive-input. Follow the in-app prompts to pair the device and [calibrate the cursor](#calibrating-the-control-cursor).
+A dongle is required to control an iOS device. With one, Vysor pairs with the device as a Bluetooth keyboard and mouse, and moves the iOS **pointer** (the assistive-input cursor that iOS shows on screen). Vysor translates your mouse movements into that pointer's motion, and iOS interprets the input as assistive-input. Follow the in-app prompts to pair the device.
 
 ## Vysor Dongle
 
@@ -64,19 +64,11 @@ esptool -p [serial port, e.g. /dev/cu.usbserial-0001 or COM4] -b 460800 \
   0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 vysor-dongle-esp32.bin
 ```
 
-## Calibrating the Control Cursor
+## Pointer Control
 
-The pointer movement must be calibrated to match your device model. Vysor does most of this automatically (it recognizes device models and applies known calibration values) and prompts for the final calibration on first use:
+The mouse maps directly onto the iOS pointer: positions are absolute, so where you point in the Vysor window is where the iOS cursor lands on the device screen. No calibration is needed.
 
-1. With the device connected, Vysor shows: *"To calibrate your mouse, click the Calibrate button then click the location of the iOS cursor after it moves. Repeat this the prior two steps until calibration is complete. Assistive Touch must be enabled for the cursor to be visible."*
-2. Click **Calibrate**. The cursor moves to a spot on the device screen; click where it stops.
-3. Repeat until Vysor reports that calibration is complete.
-
-The cursor is driven through the device's accessibility features, so **AssistiveTouch must be enabled** on the iOS device for the cursor to be visible ([Settings → Accessibility → Touch → AssistiveTouch](https://support.apple.com/guide/iphone/assistivetouch-iph3e32e842/ios)).
+The cursor is driven through the device's accessibility features, so **AssistiveTouch must be enabled** on the iOS device for the cursor to be visible ([Settings → Accessibility → Touch → AssistiveTouch](https://support.apple.com/guide/iphone/assistivetouch-iph3e32e842/ios)). The on-screen AssistiveTouch menu can be hidden in the AssistiveTouch settings; pointer control continues to work with the menu hidden.
 
 Related settings (device settings → Mouse panel):
-- **Track Desktop Mouse:** the iOS touch indicator tracks your mouse, and the desktop pointer is hidden.
-- **Lock Mouse:** also locks mouse input to the Vysor window while in use.
-- **Reset Mouse Calibration:** restores default calibration values; manual per-axis calibration values are also available there.
-
-If the pointer drifts or clicks land in the wrong place, reset the calibration and run it again.
+- **Lock Mouse:** locks mouse input to the Vysor window while in use.
