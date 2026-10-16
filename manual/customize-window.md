@@ -46,5 +46,3 @@ Bitrate, resolution, decoder, and quality presets — see [Video Quality](/manua
 ### Device Settings
 
 - **Display Power:** dim or turn off the device's display while using Vysor.
-- **Web Video Stream:** a video stream URL for broadcast software — see [Video Broadcasting (OBS)](/manual/obs).
-- **Virtual Camera** (Linux): expose the device as a system camera — see [Linux Installation](/linux).

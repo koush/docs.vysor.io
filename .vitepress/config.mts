@@ -66,7 +66,7 @@ export default defineConfig({
           { text: 'Controlling iOS', link: '/manual/ios-control' },
           { text: 'Device Window', link: '/manual/customize-window' },
           { text: 'Customizing Vysor', link: '/manual/customize' },
-          { text: 'Video Broadcasting (OBS)', link: '/manual/obs' },
+          
         ],
       },
       {
