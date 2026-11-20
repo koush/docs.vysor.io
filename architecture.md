@@ -41,11 +41,9 @@ Because this is a plain network connection to the ADB daemon, the device and the
 
 ## iOS
 
-iOS does not have an ADB-like debugging interface, so Vysor mirrors iOS through the [Vysor iOS app](https://apps.apple.com/us/app/vysor/id1577813680): the app records the screen (a permission iOS requires the user to grant) and streams it to the computer over USB.
+iOS does not have an ADB-like debugging interface. Vysor uses Apple's **CoreDevice** developer interface over USB: it opens a paired CoreDevice session, receives the device display, and injects mouse and keyboard input as HID events.
 
-iOS mirroring is **view-only**: the screen is streamed and audio can be mirrored, but iOS does not allow an app to inject touch input. As a companion feature, Vysor can control iOS through a **Bluetooth HID connection**: the iOS device is paired to a [Vysor Dongle](/manual/ios-control#vysor-dongle) as a Bluetooth keyboard and mouse, and Vysor uses that connection to move the iOS pointer. iOS then interprets the input as assistive-input, which is why an accessibility control cursor appears on the device.
-
-Follow the in-app prompts to pair the device. This is optional — Vysor can be used for mirroring only.
+CoreDevice requires the computer to be trusted, [Developer Mode](/ios#enable-developer-mode) to be enabled, and the device to run a supported iOS version. On first connection, Vysor downloads and installs Apple's signed developer image. No jailbreak or companion app is required.
 
 ## Vysor Share
 
@@ -56,4 +54,4 @@ Follow the in-app prompts to pair the device. This is optional — Vysor can be 
 - Android mirroring requires the user to explicitly enable USB debugging and approve the computer.
 - The on-device streaming server writes to `/data/local/tmp` only, and every connection to the video and control sockets must present a session password that ADB delivers to Vysor.
 - Vysor Share connections are transported over WebRTC, which encrypts media and data in transit (DTLS). See [Vysor Share: security](/share#security).
-- iOS mirroring works with the permissions granted by the device owner to the Vysor iOS app (screen recording, and optionally Bluetooth pairing).
+- iOS mirroring and control use Apple's CoreDevice developer interface over USB, and require the user to trust the computer and enable Developer Mode on the device.

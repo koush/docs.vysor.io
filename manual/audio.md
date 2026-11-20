@@ -16,7 +16,3 @@ Audio mirroring on Android requires:
 The first time audio is enabled, the device asks for two permissions: **microphone access** for the Vysor app, and a system **audio capture** dialog. Approve both and audio starts streaming. Subsequent sessions connect without prompts.
 
 Some apps opt out of audio capture and will not be audible.
-
-## iOS
-
-iOS audio mirrors over USB through the [Vysor iOS app](https://apps.apple.com/us/app/vysor/id1577813680) — toggle it with the same headphones button.

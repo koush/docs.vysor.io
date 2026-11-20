@@ -1,24 +1,35 @@
 ---
-description: "Setting up iOS mirroring with the Vysor iOS app over USB."
+description: "Setting up iOS mirroring and control over USB with Apple's CoreDevice interface."
 ---
 
 # iOS Setup
 
-iOS device mirroring uses the [Vysor](https://apps.apple.com/us/app/vysor/id1577813680) iOS app and works over USB.
-
-iOS mirroring is **view-only**: the screen is streamed and audio can be mirrored, but iOS does not allow an app to inject touch input. Control is available as an optional companion feature using a **Vysor Dongle** — see [Controlling iOS](/manual/ios-control) and [How Vysor Works](/architecture#ios).
+Vysor mirrors and controls iPhone and iPad over USB using Apple's CoreDevice developer interface. No app is required on the device.
 
 ## Requirements
 
-- An iPhone or iPad running a supported version of iOS/iPadOS.
-- The [Vysor](https://apps.apple.com/us/app/vysor/id1577813680) app installed from the App Store.
+- An iPhone or iPad running a supported version of iOS/iPadOS (currently iOS 27).
+- The Vysor desktop app.
 - A USB cable connecting the device to your computer.
-- To control the device (optional): a [Vysor Dongle](/manual/ios-control#vysor-dongle).
+- [Developer Mode](#enable-developer-mode) enabled on the device.
+
+## Enable Developer Mode
+
+1. Connect the device to your computer, unlock it, and tap **Trust** if prompted.
+2. On the device, open **Settings → Privacy & Security → Developer Mode** and turn it on.
+3. Restart the device when prompted, then unlock it and confirm **Turn On** after the restart.
 
 ## Connect Your Device
 
-1. Install the **Vysor** app on your device from the App Store.
-2. Open the app and grant it permission to record the screen when prompted. iOS requires this permission for screen mirroring.
-3. Connect your device to your computer with a USB cable.
-4. If prompted, tap **Trust** on your device to trust the computer. Ensure the device is unlocked.
-5. Your device appears in the Vysor device list. Select it to begin mirroring.
+1. Connect the device to your computer with a USB cable and unlock it.
+2. If prompted, tap **Trust** on the device to trust the computer.
+3. Select the device in the Vysor device list.
+4. On the first connection, Vysor downloads and installs Apple's developer image. This can take a few minutes and requires an internet connection.
+5. The device screen appears in the Vysor window. Use your mouse and keyboard to control it.
+
+Control is built in over USB. See [Controlling iOS](/manual/ios-control).
+
+## Notes
+
+- iOS mirroring and control are available in the Vysor desktop app.
+- The developer image is signed for the connected device and cached locally after installation.

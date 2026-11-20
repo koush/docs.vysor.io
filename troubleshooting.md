@@ -17,7 +17,7 @@ If your Android device does not appear in the device list:
 4. Set the device's USB mode to **PTP** (it is usually MTP or Charge Only).
 5. On Windows, install the [Universal ADB Drivers](https://adb.clockworkmod.com/). If that doesn't work, try your manufacturer's drivers.
 
-For iOS devices, ensure the device is unlocked, you have tapped **Trust**, and the Vysor iOS app has been granted screen recording permission.
+For iOS devices, ensure the device is unlocked, you have tapped **Trust**, Developer Mode is enabled, and the device is running a supported iOS version.
 
 ## USB Debugging Prompt Not Appearing
 

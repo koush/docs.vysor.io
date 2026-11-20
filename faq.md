@@ -6,7 +6,7 @@ description: "Frequently asked questions about Vysor: root requirements, safety,
 
 ## Does Vysor require root?
 
-No. Android mirroring uses the standard [ADB debugging interface](/architecture#android) — enable [USB debugging](/android#enable-usb-debugging) and that is the whole requirement. iOS mirroring does not require a jailbreak either; it uses the permissions granted to the Vysor iOS app.
+No. Android mirroring uses the standard [ADB debugging interface](/architecture#android) — enable [USB debugging](/android#enable-usb-debugging) and that is the whole requirement. iOS mirroring and control do not require a jailbreak either; they use Apple's CoreDevice developer interface over USB, with Developer Mode enabled.
 
 ## Is Vysor safe to use?
 

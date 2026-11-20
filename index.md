@@ -26,7 +26,7 @@ features:
     linkText: Set up Android
   - icon: 🍎
     title: iOS Mirroring
-    details: View your iPhone or iPad screen with the Vysor iOS app over USB, with optional Bluetooth control.
+    details: View and control your iPhone or iPad over USB using Apple's CoreDevice interface.
     link: /ios
     linkText: Set up iOS
   - icon: 🖥️
