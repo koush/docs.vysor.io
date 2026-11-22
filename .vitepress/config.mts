@@ -47,7 +47,6 @@ export default defineConfig({
         items: [
           { text: 'What is Vysor?', link: '/' },
           { text: 'Download & Install', link: '/download' },
-          { text: 'Linux Installation', link: '/linux' },
           { text: 'Android Setup', link: '/android' },
           { text: 'iOS Setup', link: '/ios' },
         ],

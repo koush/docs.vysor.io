@@ -8,13 +8,13 @@ Vysor is available as a desktop application for Windows, macOS, and Linux, and a
 
 ## Desktop Application
 
-The Vysor desktop application installers for Windows, macOS, and Linux are available at [vysor.io/download](https://www.vysor.io/download). On Linux, the app is distributed as a deb package — see [Linux Installation](/linux) for details.
+The Vysor desktop application installers for Windows, macOS, and Linux are available at [vysor.io/download](https://www.vysor.io/download).
 
 The installers are also published on the [GitHub releases page](https://github.com/koush/vysor.io/releases) for reference.
 
 The desktop app manages its own device tools automatically.
 
-### iOS on Windows
+### Windows iOS support
 
 Windows requires [Apple Mobile Device Support](https://github.com/koush/AppleMobileDeviceSupport/releases/latest). macOS and Linux need no additional software for iOS.
 
