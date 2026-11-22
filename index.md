@@ -26,7 +26,7 @@ features:
     linkText: Set up Android
   - icon: 🍎
     title: iOS Mirroring
-    details: View and control your iPhone or iPad over USB using Apple's CoreDevice interface.
+    details: View and control your iPhone or iPad over USB or wirelessly using Apple's developer mode.
     link: /ios
     linkText: Set up iOS
   - icon: 🖥️
@@ -36,7 +36,7 @@ features:
     linkText: Download & Install
   - icon: 🔗
     title: Vysor Share
-    details: Give anyone remote access to a device — screen, control, and ADB debugging — with a link.
+    details: Give anyone remote access to a device — screen and control — with a link.
     link: /share
     linkText: Share a device
   - icon: ⚡

@@ -1,8 +1,10 @@
 ---
-description: "Recording the mirrored Android device screen to a video file on your computer with Vysor."
+description: "Recording the mirrored device screen to a video file on your computer with Vysor."
 ---
 
 # Screen Recording
+
+Screen recording works on Android and iOS devices.
 
 1. Press the **Record** button in the device window to start recording.
 2. Press the **Stop Recording** button to stop.

@@ -10,7 +10,7 @@ While a device is connected, its Android notifications can be forwarded to your 
 
 Toggle **Desktop Notifications** under **Window Settings** in the [device settings](/manual/customize-window#settings). Vysor also offers to enable notifications the first time you connect a device.
 
-Desktop notifications require the [Vysor Android app](https://github.com/koush/docs.vysor.io/releases/latest/download/Vysor-release.apk) on the device — Vysor grants it notification access automatically over ADB; there is nothing to configure on the device.
+Desktop notifications require the [Vysor Android app](https://github.com/koush/docs.vysor.io/releases/latest/download/Vysor-release.apk) on the device — Vysor grants it notification access automatically; there is nothing to configure on the device.
 
 ## Using
 

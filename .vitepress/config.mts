@@ -57,13 +57,13 @@ export default defineConfig({
         items: [
           { text: 'Video Quality', link: '/manual/video-quality' },
           { text: 'Audio Mirroring', link: '/manual/audio' },
+          { text: 'Wireless Connections', link: '/manual/wireless' },
           { text: 'Copy and Paste', link: '/manual/copy-paste' },
           { text: 'Drag and Drop Files', link: '/manual/drag-and-drop' },
           { text: 'Screen Recording', link: '/manual/screen-recording' },
           { text: 'Screenshots', link: '/manual/screenshots' },
           { text: 'Multitouch', link: '/manual/multitouch' },
           { text: 'Desktop Notifications', link: '/manual/notifications' },
-          { text: 'Controlling iOS', link: '/manual/ios-control' },
           { text: 'Device Window', link: '/manual/customize-window' },
           { text: 'Customizing Vysor', link: '/manual/customize' },
           
@@ -88,6 +88,8 @@ export default defineConfig({
         items: [
           { text: 'FAQ', link: '/faq' },
           { text: 'Troubleshooting', link: '/troubleshooting' },
+          { text: 'Android Troubleshooting', link: '/troubleshooting/android' },
+          { text: 'iOS Troubleshooting', link: '/troubleshooting/ios' },
           { text: 'How Vysor Works', link: '/architecture' },
         ],
       },

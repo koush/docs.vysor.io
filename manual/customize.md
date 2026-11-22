@@ -103,7 +103,7 @@ The customization is a JSON document. These are the default settings for Android
           },
           {
             "class": "fa-power-off",
-            "title": "Screen On/Off",
+            "title": "Lock / Wake",
             "event": "KEYCODE_POWER"
           },
           {

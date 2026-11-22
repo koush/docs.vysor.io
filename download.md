@@ -12,11 +12,15 @@ The Vysor desktop application installers for Windows, macOS, and Linux are avail
 
 The installers are also published on the [GitHub releases page](https://github.com/koush/vysor.io/releases) for reference.
 
-The desktop app communicates with devices over USB with the [ADB](https://developer.android.com/tools/adb) (Android Debug Bridge) platform tools, which it manages automatically.
+The desktop app manages its own device tools automatically.
+
+### iOS on Windows
+
+Windows requires [Apple Mobile Device Support](https://github.com/koush/AppleMobileDeviceSupport/releases/latest). macOS and Linux need no additional software for iOS.
 
 ## Web App
 
-Vysor runs in any modern browser at [app.vysor.io](https://app.vysor.io). The web app can connect to Android devices over the network, or to devices connected to a machine running the Vysor desktop app.
+Vysor runs in any modern browser at [app.vysor.io](https://app.vysor.io). The web app can connect to Android devices over the network, and to devices shared with you through [Vysor Share](/share). Local iOS mirroring is available in the desktop app.
 
 ## Android APK
 
@@ -25,5 +29,6 @@ The Vysor Android app is also [available as a direct APK download](https://githu
 ## Requirements
 
 - Windows, macOS, or Linux for the desktop app.
+- On Windows, Apple Mobile Device Support for iOS devices. macOS and Linux need no additional dependencies for iOS.
 - A modern browser, such as Chrome, for the web app.
 - A USB cable (for wired mirroring), or a network connection to your device (wireless).

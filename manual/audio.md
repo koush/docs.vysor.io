@@ -1,5 +1,5 @@
 ---
-description: "Mirroring device audio to your computer: the Audio Mirroring toggle in the Vysor device window, the Android 10 requirement, and first-time permission prompts."
+description: "Mirroring device audio to your computer with the Audio Mirroring toggle."
 ---
 
 # Audio Mirroring
@@ -16,3 +16,7 @@ Audio mirroring on Android requires:
 The first time audio is enabled, the device asks for two permissions: **microphone access** for the Vysor app, and a system **audio capture** dialog. Approve both and audio starts streaming. Subsequent sessions connect without prompts.
 
 Some apps opt out of audio capture and will not be audible.
+
+## iOS
+
+Audio mirroring works on iPhone and iPad without installing an app. Toggle **Audio Mirroring** in the title bar.

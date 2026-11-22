@@ -4,7 +4,7 @@ description: "Vysor Pro feature reference: free vs Pro comparison, purchasing, a
 
 # Vysor Pro
 
-Vysor can be used for free for screen mirroring and control of Android devices, including screenshots. Vysor Pro unlocks the remaining features.
+Vysor can be used for free for screen mirroring and control of Android and iOS devices, including screenshots. Vysor Pro unlocks the remaining features.
 
 <!-- TODO(verify): reconcile this table against the definitive master feature list; pricing
 options and trial terms to be confirmed before publishing. -->
@@ -13,17 +13,19 @@ options and trial terms to be confirmed before publishing. -->
 
 | Feature | Free | Pro |
 |---|:---:|:---:|
-| Mirror and control Android | ✅ | ✅ |
+| Mirror and control Android and iOS | ✅ | ✅ |
 | [Screenshots](/manual/screenshots) | ✅ | ✅ |
 | High quality mirroring |  | ✅ |
 | Fullscreen |  | ✅ |
 | [Wireless mirroring](/manual/wireless) |  | ✅ |
 | [Audio mirroring](/manual/audio) |  | ✅ |
 | [Screen recording](/manual/screen-recording) |  | ✅ |
-| [Desktop notifications](/manual/notifications) |  | ✅ |
-| [Drag and drop files](/manual/drag-and-drop) |  | ✅ |
-| All displays |  | ✅ |
+| [Desktop notifications](/manual/notifications) (Android) |  | ✅ |
+| [Drag and drop files](/manual/drag-and-drop) (Android) |  | ✅ |
+| All displays (Android) |  | ✅ |
 | [Vysor Share](/share) |  | ✅ |
+
+Desktop notifications, drag-and-drop file transfer, and multiple displays are Android-only.
 
 [Enterprise](/enterprise) adds team licensing and web-based Share access management.
 

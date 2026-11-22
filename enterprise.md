@@ -22,5 +22,5 @@ Enterprise subscriptions are managed at [billing.vysor.io](https://billing.vysor
 ## Use Cases
 
 - **Team device farms.** Run **Share All Devices** on bench machines; the team connects to any device from anywhere, with per-device usage visibility (who is using what) and access restricted to organization members.
-- **Remote ADB.** Developers share devices with teammates or contractors over Vysor Share for full remote debugging — install builds, inspect logcat, run Android Studio — without shipping hardware.
+- **Remote testing.** Developers and testers share devices with teammates or contractors over Vysor Share, viewing and controlling them without shipping hardware.
 - **QA access from distributed teams.** Testers connect to the same physical devices from distributed locations, keeping everyone on identical hardware and builds.

@@ -1,37 +1,24 @@
 ---
-description: "Switching an Android device from USB to wireless mirroring over WiFi, connecting by network address, and fixing wireless connection failures."
+description: "Switching a device from USB to wireless mirroring over Wi-Fi."
 ---
 
 # Wireless Connections
 
-Once a device has been set up over USB, it can be switched to wireless mirroring with no cable, and stays usable on the network — including from remote machines over a [Vysor Share](/share) connection. Switching a device to wireless requires the [desktop app](/download).
+Once a device has been set up over USB, it can be switched to wireless mirroring with no cable, and stays usable on the network — including from remote machines over a [Vysor Share](/share) connection.
 
-## Switching a Device to Wireless
+## Android
 
-1. Connect the device over USB (see [Android Setup](/android)).
-2. Click **Wireless Mode** in the device window, or **View Wirelessly** on the device in the device list.
-3. Vysor switches the device's ADB daemon to listen on the network (port 5555), then reconnects over WiFi. The mirroring session moves from USB to the network connection without restarting.
+Android wireless mirroring uses Android 11+'s **Wireless debugging**.
 
-You may disconnect the cable once the wireless session is running.
+1. On the device, open **Settings → System → Developer options** and enable **Wireless debugging**. Connect the device to the same Wi-Fi network as your computer and accept the prompt to trust that network.
+2. Connect the device over USB once (see [Android Setup](/android)) and open it in Vysor.
+3. Click **Wireless Mode** in the device window, or **View Wirelessly** on the device in the device list.
+4. Vysor reconnects over Wi-Fi. You may disconnect the USB cable once the wireless session is running.
 
-The device remains available wirelessly until it disconnects from the network or its ADB daemon restarts (for example, after a reboot — reconnect over USB once to switch it back).
+This setup is one-time; after the first connection, Vysor can reconnect wirelessly.
 
-## Requirements
+If the device cannot be found later, for example after a reboot or a network change, reconnect over USB and switch it to wireless again.
 
-- The [desktop app](/download). The web app can mirror wireless devices shared with you, but cannot switch a local device to wireless.
-- The device and the computer must be able to reach each other on the **same network** (Vysor connects to the device's WiFi address on port **5555**).
-- The device must stay on the network it was switched on. If its IP address changes, it must be re-switched over USB. <!-- TODO(verify): document the recommended setup for devices on DHCP (e.g., router-side IP reservation) once confirmed. -->
+## iOS
 
-## Connecting by Address
-
-The desktop app can connect directly to a device whose ADB is already listening on the network: use **Connect Network or Shared Device** and enter the device's address (`192.168.1.100:5555`).
-
-In the browser, the connect dialog accepts share links only; use [Vysor Share](/share) to reach devices from the web app.
-
-## Troubleshooting Wireless Failures
-
-- **"This device is not available wirelessly."** The device changed networks or IP addresses, its ADB daemon is no longer listening (it rebooted), or the computer can no longer reach it. Reconnect over USB and switch it again.
-- Wireless connects but the computer and device are on **different networks** (for example, a guest WiFi): the connection cannot be established. Put both on the same network, or use [Vysor Share](/share), which tunnels over the internet.
-- Corporate networks that block connections between devices on the same WiFi may prevent the direct connection. See [Troubleshooting](/troubleshooting) for more.
-
-<!-- TODO(verify): top support issues for wireless from the support inbox will slot in here. -->
+Wireless mirroring on iPhone and iPad just works once the device has been connected and trusted over USB. Keep the device on the same Wi-Fi network as your computer, then click **Wireless Mode** in the device window or **View Wirelessly** in the device list. Vysor finds the device and reconnects over Wi-Fi; you may disconnect the USB cable once the wireless session is running.

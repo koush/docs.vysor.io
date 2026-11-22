@@ -4,7 +4,7 @@ description: "Choosing a video quality preset in Vysor, and why higher bitrates 
 
 # Video Quality
 
-Vysor ships with several preset video qualities. Try the presets to see what works best for your Android device, then adjust to your preference.
+Vysor ships with several preset video qualities. Try the presets to see what works best for your device, then adjust to your preference. Video quality settings are available for Android and iOS devices.
 
 Notes:
 
