@@ -21,4 +21,4 @@ If the device cannot be found later, for example after a reboot or a network cha
 
 ## iOS
 
-Wireless mirroring on iPhone and iPad just works once the device has been connected and trusted over USB. Keep the device on the same Wi-Fi network as your computer, then click **Wireless Mode** in the device window or **View Wirelessly** in the device list. Vysor finds the device and reconnects over Wi-Fi; you may disconnect the USB cable once the wireless session is running.
+Wireless mirroring on iPhone and iPad works after the device has been set up over USB once with [Developer Mode](/ios#enable-developer-mode) enabled. Keep the device on the same Wi-Fi network as your computer, then click **Wireless Mode** in the device window or **View Wirelessly** in the device list. Vysor finds the device on the local network and reconnects over Wi-Fi; you may disconnect the USB cable once the wireless session is running.

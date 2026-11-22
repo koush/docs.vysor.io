@@ -1,5 +1,5 @@
 ---
-description: "Frequently asked questions about Vysor: root requirements, safety, licensing, and the companion app."
+description: "Frequently asked questions about Vysor: root requirements, safety, licensing, and device support."
 ---
 
 # FAQ
@@ -15,7 +15,7 @@ No. Neither platform requires root or a jailbreak.
 
 Vysor uses the developer access you explicitly enable on the device:
 - You enable USB debugging on Android or Developer Mode on iOS, and approve or trust each computer on the device.
-- The Android device-side service exists only while Vysor is connected; nothing persistent is installed.
+- On Android, Vysor installs its companion app automatically; the mirroring service runs only while Vysor is connected. On iOS, Vysor installs Apple's developer image but no app.
 - Android mirroring requires no root, and iOS mirroring and control require no jailbreak.
 - Vysor Share connections are encrypted, and device servers verify each user's identity against your access rules before granting access ([security details](/share#security)).
 
@@ -30,6 +30,11 @@ Screen mirroring and control of Android and iOS devices, and screenshots, work w
 ## What's the difference between Pro and Enterprise?
 
 Vysor Pro is a per-user license that unlocks all the product features. Enterprise is per-seat licensing for teams and adds organizational controls — web-based management of who can access your shared device servers, and organization-managed seats. See [Enterprise](/enterprise).
+
+## Do I need to install an app?
+
+- **Android:** No need to install one manually. Vysor installs its Android companion app automatically when you connect.
+- **iOS:** No. Vysor uses Apple's developer mode, and no app is installed on the device.
 
 ## Do I need the Android companion app?
 

@@ -36,7 +36,7 @@ Open the settings dialog with **Settings** in the title bar menu. Settings are p
 - **When device is connected:** show a notification, connect automatically, or do nothing (desktop app only).
 - **When screenshot is taken:** show a preview, save to a file, or copy to the clipboard — see [Screenshots](/manual/screenshots).
 - **Pin Title Bar**, **Navigation Bar**, and **Always On Top:** as described above.
-- **International Keyboard (Android):** send characters from non-English keyboards directly, and hide the soft keyboard on the device. Uses the input method from the [Vysor Android app](https://github.com/koush/docs.vysor.io/releases/latest/download/Vysor-release.apk).
+- **International Keyboard (Android):** send characters from non-English keyboards directly, and hide the soft keyboard on the device.
 - **Desktop Notifications (Android):** forward Android notifications to your desktop — see [Desktop Notifications](/manual/notifications).
 
 ### Image Quality

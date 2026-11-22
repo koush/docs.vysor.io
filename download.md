@@ -12,7 +12,7 @@ The Vysor desktop application installers for Windows, macOS, and Linux are avail
 
 The installers are also published on the [GitHub releases page](https://github.com/koush/vysor.io/releases) for reference.
 
-The desktop app manages its own device tools automatically.
+For Android, the desktop app manages its own device tools automatically.
 
 ### Windows iOS support
 
@@ -24,11 +24,11 @@ Vysor runs in any modern browser at [app.vysor.io](https://app.vysor.io). The we
 
 ## Android APK
 
-The Vysor Android app is also [available as a direct APK download](https://github.com/koush/docs.vysor.io/releases/latest/download/Vysor-release.apk) and is always up to date with the latest release.
+If automatic setup fails, the Vysor Android app is available as a [direct APK download](https://github.com/koush/docs.vysor.io/releases/latest/download/Vysor-release.apk) and is always up to date with the latest release.
 
 ## Requirements
 
 - Windows, macOS, or Linux for the desktop app.
 - On Windows, Apple Mobile Device Support for iOS devices. macOS and Linux need no additional dependencies for iOS.
 - A modern browser, such as Chrome, for the web app.
-- A USB cable (for wired mirroring), or a network connection to your device (wireless).
+- A USB cable (for wired mirroring), or a network connection to your device (wireless). iOS requires one USB connection to set up before wireless works.

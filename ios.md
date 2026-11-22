@@ -4,7 +4,7 @@ description: "Setting up iOS mirroring and control with Apple's developer mode."
 
 # iOS Setup
 
-Vysor mirrors and controls iPhone and iPad using Apple's developer mode. No app, dongle, or Bluetooth accessory is required.
+Vysor mirrors and controls iPhone and iPad using Apple's developer mode.
 
 ## Requirements
 

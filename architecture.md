@@ -8,11 +8,11 @@ Vysor mirrors and controls devices through the developer access each platform pr
 
 ## Android
 
-Vysor starts a small service on the device through the standard USB debugging interface. The service captures the screen and accepts input, and it runs only while Vysor is connected. Nothing persistent is installed and no system changes are made. [USB debugging](/android#enable-usb-debugging) must be enabled and the computer approved once.
+Vysor sets up the device automatically over the standard USB debugging interface. It captures the screen and accepts input while Vysor is connected, without root or system modifications. [USB debugging](/android#enable-usb-debugging) must be enabled and the computer approved once.
 
 ## iOS
 
-Vysor uses Apple's developer mode: trust the computer and enable [Developer Mode](/ios#enable-developer-mode) on the device. On first connection, Vysor installs Apple's developer image. No jailbreak or companion app is required.
+Vysor uses Apple's developer mode: trust the computer and enable [Developer Mode](/ios#enable-developer-mode) on the device. On first connection, Vysor installs Apple's developer image. No iOS app or jailbreak is required. On Windows, install Apple Mobile Device Support; macOS and Linux need no additional software.
 
 ## Wireless
 
