@@ -1,64 +1,122 @@
 ---
-description: "Customizing Vysor: remapping keyboard keys and mouse buttons to Android key events, and editing the title bar and navigation bar buttons, via the Customize settings JSON."
+description: "Customizing Vysor: changing the theme, remapping keyboard keys and mouse buttons, editing title bar and navigation bar buttons, and per-device overrides."
 ---
 
 # Customizing Vysor
 
-Customizing Vysor (app menu → **Customize**) lets you change how key and mouse events are mapped from your desktop to your device, and modify the buttons on the title bar and navigation bar of the device window.
+Customizing Vysor lets you change the theme, buttons, mouse behavior, and key bindings.
 
-The customization is a JSON document. These are the default settings for Android devices:
+## Opening the Editor
+
+In the Vysor **Devices** window, find the **Preferences** section and click **Customize Vysor**.
+
+The editor shows the configuration as a JSON document. Appearance settings sit at the top, and the key and mouse mappings are grouped into a section per device platform: `android` and `apple` (iOS). A few other top-level sections cover host features. Use **Restore Defaults** to reset the current settings, or **Use Accessibility Defaults** to load the accessibility-friendly bindings. Click **Save** to apply your changes.
+
+## Appearance
+
+The top-level appearance settings control the look of the device window, and can be overridden per device:
+
+- `dark` — use the dark theme.
+- `dense` — use the denser layout.
+- `themeColor`, `accentColor`, and `backgroundColor` — colors for the UI.
 
 ```json
 {
-  "adb": {
-    "path": null,
-    "arguments": []
-  },
+  "dark": false,
+  "dense": true,
+  "themeColor": "#3949AB",
+  "accentColor": "#FF9800",
+  "backgroundColor": "#000000"
+}
+```
+
+## Events
+
+Settings that trigger a key accept an event in one of two forms. A plain string is an [Android KeyEvent keycode](https://developer.android.com/reference/android/view/KeyEvent) or a `VYSOR_*` app event, such as `"KEYCODE_BACK"` or `"VYSOR_ENTER_FULLSCREEN"`.
+
+An object describes a key plus modifiers:
+
+- `keyevent` (Android) — the Android keycode to send.
+- `code` (iOS) — the physical key code to send, for example `KeyH`.
+- `shiftKey`, `meta` — modifier flags. On iOS, `meta` is the Command key.
+
+## Key Entries
+
+A `keydown` entry maps a JavaScript [KeyboardEvent key](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key) to an event. Android accepts either a string or an object; iOS uses the object form.
+
+```json
+"android": {
+  "keydown": {
+    "ArrowDown": "KEYCODE_DPAD_DOWN",
+    "Tab": {
+      "keyevent": "KEYCODE_TAB",
+      "shiftKey": true
+    }
+  }
+}
+```
+
+The `Tab` entry above sends the shift modifier with `KEYCODE_TAB`, which moves between on-screen controls in Android.
+
+## Mouse Buttons
+
+A `mousedown` entry maps a mouse button to an event, where `1` is the middle button and `2` is the right button.
+
+```json
+"android": {
   "mousedown": {
     "1": "KEYCODE_HOME",
     "2": "KEYCODE_BACK"
-  },
-  "keydown": {
-    "AltLeft": "KEYCODE_ALT_LEFT",
-    "AltRight": "KEYCODE_ALT_RIGHT",
-    "ShiftLeft": "KEYCODE_SHIFT_LEFT",
-    "ShiftRight": "KEYCODE_SHIFT_RIGHT",
-    "ControlLeft": "KEYCODE_CTRL_LEFT",
-    "ControlRight": "KEYCODE_CTRL_RIGHT",
-    "ArrowDown": "KEYCODE_DPAD_DOWN",
-    "ArrowLeft": "KEYCODE_DPAD_LEFT",
-    "ArrowRight": "KEYCODE_DPAD_RIGHT",
-    "ArrowUp": "KEYCODE_DPAD_UP",
-    "Backspace": "KEYCODE_DEL",
-    "Delete": "KEYCODE_FORWARD_DEL",
-    "Enter": "KEYCODE_ENTER",
-    "Escape": "KEYCODE_BACK",
-    "F1": "KEYCODE_MENU",
-    "F2": "VYSOR_SHOW_TITLE_BAR",
-    "F3": "VYSOR_ENTER_FULLSCREEN",
-    "F4": "VYSOR_EXIT_FULLSCREEN",
-    "Home": "KEYCODE_HOME",
-    "Tab": "KEYCODE_TAB"
-  },
+  }
+},
+"apple": {
+  "mousedown": {
+    "1": { "code": "KeyH", "meta": true },
+    "2": { "code": "BracketLeft", "meta": true }
+  }
+}
+```
+
+## Navigation Bar Buttons
+
+The `navigationBar.buttons` array defines the buttons drawn along the bottom of the device window. Each button has a `title`, an `event`, and a `class` (a [Font Awesome](https://fontawesome.com/icons) icon class to draw). The `event` can be a string or an object.
+
+```json
+"android": {
   "navigationBar": {
     "buttons": [
-      {
-        "class": "fa-chevron-left",
-        "event": "KEYCODE_BACK",
-        "title": "Back"
-      },
       {
         "class": "fa-circle",
         "event": "KEYCODE_HOME",
         "title": "Home"
-      },
-      {
-        "class": "fa-bars",
-        "event": "KEYCODE_APP_SWITCH",
-        "title": "Recent Tasks"
       }
     ]
-  },
+  }
+}
+```
+
+On iOS, use an event object to send a key chord, such as Command-H for the Home screen:
+
+```json
+"apple": {
+  "navigationBar": {
+    "buttons": [
+      {
+        "class": "fa-circle",
+        "event": { "code": "KeyH", "meta": true },
+        "title": "Home"
+      }
+    ]
+  }
+}
+```
+
+## Title Bar Buttons
+
+The `titleBar.buttonGroups` array defines the buttons drawn in the title bar of the device window. Each group is either a set of `buttons` shown inline, or a dropdown menu with a `menuClass` icon and its `buttons` inside.
+
+```json
+"android": {
   "titleBar": {
     "buttonGroups": [
       {
@@ -67,24 +125,6 @@ The customization is a JSON document. These are the default settings for Android
             "class": "fa-camera",
             "title": "Take Screenshot",
             "event": "VYSOR_SCREENSHOT"
-          },
-          {
-            "class": "fa-video",
-            "stopClass": "fa-video-slash fa-spin",
-            "stopColor": "red",
-            "title": "Record Screen",
-            "event": "VYSOR_RECORD_SCREEN"
-          },
-          {
-            "class": "fa-headphones",
-            "stopColor": "green",
-            "title": "Toggle Audio",
-            "event": "VYSOR_TOGGLE_AUDIO"
-          },
-          {
-            "class": "fa-expand",
-            "title": "Full Screen",
-            "event": "VYSOR_ENTER_FULLSCREEN"
           }
         ]
       },
@@ -92,30 +132,10 @@ The customization is a JSON document. These are the default settings for Android
         "menuClass": "fa-cog",
         "buttons": [
           {
-            "class": "fa-wifi",
-            "title": "Wireless Mode",
-            "event": "VYSOR_WIRELESS_MODE"
-          },
-          {
-            "class": "fa-redo",
-            "title": "Rotate Screen",
-            "event": "VYSOR_ROTATE_SCREEN"
-          },
-          {
-            "class": "fa-power-off",
-            "title": "Lock / Wake",
-            "event": "KEYCODE_POWER"
-          },
-          {
             "class": "fa-clipboard-list",
             "title": "Copy Logcat",
             "event": "VYSOR_SHELL_COMMAND",
             "command": "logcat -t 500"
-          },
-          {
-            "class": "fa-cog",
-            "title": "Settings",
-            "event": "VYSOR_OPEN_DEVICE_SETTINGS"
           }
         ]
       }
@@ -124,71 +144,75 @@ The customization is a JSON document. These are the default settings for Android
 }
 ```
 
-The editor also holds an `apple` section with the equivalent defaults for iOS devices, and appearance settings.
+A button entry supports these fields:
 
-## Key Entries
+- `class` — the Font Awesome icon to draw.
+- `title` — the tooltip shown on hover.
+- `event` — the event dispatched when the button is pressed.
+- `stopClass` and `stopColor` — an alternate icon and color shown while a toggle is active, used for the record and audio buttons.
+- `command` — for `VYSOR_SHELL_COMMAND` events, the shell command to run on the device. The output is copied to your clipboard.
 
-A `keydown` entry maps a JavaScript [KeyboardEvent key](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key) to an [Android KeyEvent keycode](https://developer.android.com/reference/android/view/KeyEvent) or a `VYSOR_*` app event (for example, `VYSOR_ENTER_FULLSCREEN`). The syntax for an entry is:
+The iOS section uses the same title bar structure, minus Android-only buttons such as **Copy Logcat**.
 
-```
-[Keycode Number | Key String]: [KeyEvent String | Key Event Object]
-```
+## Android adb Override
 
-A Key Event Object is:
-
-```
-{
-  [keycode | keyevent]: [number | string],
-  shiftKey: [true | false | undefined]
-}
-```
-
-For example, `"ArrowDown": "KEYCODE_DPAD_DOWN"` maps the JavaScript `ArrowDown` key to Android's `KEYCODE_DPAD_DOWN`.
-
-To send a shift modifier along with the key event, map to an object instead of a string. This maps the `Tab` key — with the shift modifier — to `KEYCODE_TAB`, which moves between on-screen controls in Android:
+The `android.adb` settings point Vysor at a specific adb binary and pass extra arguments to it. Set `path` to `null` to use the bundled adb.
 
 ```json
-"Tab": {
-  "keyevent": "KEYCODE_TAB",
-  "shiftKey": true
+"android": {
+  "adb": {
+    "path": "/path/to/adb",
+    "arguments": []
+  }
 }
 ```
 
-## Mouse Buttons
+## Desktop Notification Blocklist
 
-A `mousedown` entry maps a mouse button to a key event, where `1` is the middle button and `2` is the right button. The default sends **Home** on middle click and **Back** on right click.
+The `notifications.blocklist` array lists notification text that Vysor should not forward to your desktop, matched against the notification title or message.
 
-## Navigation Bar Buttons
+```json
+"notifications": {
+  "blocklist": [
+    "Vysor is hiding your keyboard"
+  ]
+}
+```
 
-The `navigationBar.buttons` array defines the buttons drawn along the bottom of the device window. Each button has a `title`, an `event` (an Android keycode or app event dispatched when pressed), and a `class` (a [Font Awesome](https://fontawesome.com/icons) icon class to draw). The default set above gives **Back**, **Home**, and **Recent Tasks** buttons.
+## macOS Camera Servers
 
-## Title Bar Buttons
+On macOS, `darwin.camera-servers` lists the paths Vysor uses for its camera servers. The `darwin` section applies to the host operating system rather than a device platform.
 
-The `titleBar.buttonGroups` array defines the buttons drawn in the title bar of the device window. Each group is either a set of `buttons` shown inline, or a dropdown menu with a `menuClass` icon and its `buttons` inside — like the default cog menu holding **Wireless Mode** and friends.
-
-Besides button entries with `event`, a `VYSOR_SHELL_COMMAND` button runs a `command` in a shell on the device and copies the output to your clipboard, as the default **Copy Logcat** button does.
+```json
+"darwin": {
+  "camera-servers": [
+    "~/Library/Containers/com.apple.PhotoBooth/Data/.vysor/vysor-camera"
+  ]
+}
+```
 
 ## Per-Device Overrides
 
-Entries under `devices` keyed by device serial number override the global `keydown`, `navigationBar`, and other settings for that device only:
+Entries under `devices` are keyed by device serial number and override any global setting for that device only — including appearance settings such as `themeColor`, plus `keydown`, `navigationBar`, and the rest.
 
 ```json
-{
-  "devices": {
-    "example-device-serial": {
-      "keydown": {
-        "F3": "KEYCODE_BACK"
-      },
-      "navigationBar": {
-        "buttons": [
-          {
-            "class": "fa-circle",
-            "event": "KEYCODE_HOME",
-            "title": "Home"
-          }
-        ]
-      }
+"devices": {
+  "example-device-serial": {
+    "themeColor": "#AA00FF",
+    "keydown": {
+      "F3": "KEYCODE_BACK"
+    },
+    "navigationBar": {
+      "buttons": [
+        {
+          "class": "fa-circle",
+          "event": "KEYCODE_HOME",
+          "title": "Home"
+        }
+      ]
     }
   }
 }
 ```
+
+To see a device's serial number in the **Devices** window, enable **Show serial numbers** under **Preferences**.
