@@ -10,7 +10,7 @@ Customizing Vysor lets you change the theme, buttons, mouse behavior, and key bi
 
 In the Vysor **Devices** window, find the **Preferences** section and click **Customize Vysor**.
 
-The editor shows the configuration as a JSON document. Appearance settings sit at the top, and the key and mouse mappings are grouped into a section per device platform: `android` and `apple` (iOS). A few other top-level sections cover host features. Use **Restore Defaults** to reset the current settings, or **Use Accessibility Defaults** to load the accessibility-friendly bindings. Click **Save** to apply your changes.
+The editor shows the configuration as a JSON document. Appearance settings sit at the top, and the key and mouse mappings are grouped into a section per device platform: `android` and `apple` (iOS). Other top-level sections control desktop notifications and per-device overrides. Use **Restore Defaults** to reset the current settings, or **Use Accessibility Defaults** to load the accessibility-friendly bindings. Click **Save** to apply your changes.
 
 ## Appearance
 
@@ -175,18 +175,6 @@ The `notifications.blocklist` array lists notification text that Vysor should no
 "notifications": {
   "blocklist": [
     "Vysor is hiding your keyboard"
-  ]
-}
-```
-
-## macOS Camera Servers
-
-On macOS, `darwin.camera-servers` lists the paths Vysor uses for its camera servers. The `darwin` section applies to the host operating system rather than a device platform.
-
-```json
-"darwin": {
-  "camera-servers": [
-    "~/Library/Containers/com.apple.PhotoBooth/Data/.vysor/vysor-camera"
   ]
 }
 ```
