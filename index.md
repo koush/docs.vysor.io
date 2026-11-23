@@ -1,52 +1,24 @@
 ---
-layout: home
-
 description: "Official Vysor documentation: mirroring and controlling Android and iOS devices from your desktop or browser, wireless connections, remote debugging, and Vysor Pro."
-
-hero:
-  name: "Vysor"
-  text: "Mirror and control your devices"
-  tagline: Put your Android or iOS device on your desktop. Plug in over USB or go fully wireless.
-  actions:
-    - theme: brand
-      text: Get Started
-      link: /download
-    - theme: alt
-      text: Use Vysor on the Web
-      link: https://app.vysor.io
-    - theme: alt
-      text: Buy Vysor Pro
-      link: /pro
-
-features:
-  - icon: 📱
-    title: Android Mirroring
-    details: Mirror and control Android devices over USB or wirelessly. Type with your keyboard, click with your mouse, and view any display.
-    link: /android
-    linkText: Set up Android
-  - icon: 🍎
-    title: iOS Mirroring
-    details: View and control your iPhone or iPad over USB or wirelessly using Apple's developer mode.
-    link: /ios
-    linkText: Set up iOS
-  - icon: 🖥️
-    title: Desktop & Web
-    details: Run Vysor as a desktop app, or use it entirely in your browser.
-    link: /download
-    linkText: Download & Install
-  - icon: 🔗
-    title: Vysor Share
-    details: Give anyone remote access to a device — screen and control — with a link.
-    link: /share
-    linkText: Share a device
-  - icon: ⚡
-    title: Vysor Pro
-    details: High quality mirroring, fullscreen, wireless, audio, recording, notifications, and more.
-    link: /pro
-    linkText: Pro features
-  - icon: 🔧
-    title: How It Works
-    details: What Vysor runs on the device, why no root is required, and how the pieces fit together.
-    link: /architecture
-    linkText: Architecture
 ---
+
+# What is Vysor?
+
+Vysor mirrors and controls Android and iOS devices from your desktop or browser. Plug a device in over USB or connect wirelessly, then use your mouse and keyboard to operate it directly. No root or jailbreak is required.
+
+## Get Started
+
+- [Download & Install](/download): desktop installers for Windows, macOS, and Linux, plus the web app.
+- [Android Setup](/android): enable USB debugging and connect your device.
+- [iOS Setup](/ios): enable Developer Mode and connect your iPhone or iPad.
+
+## Learn More
+
+- [Manual](/manual/video-quality): video quality, audio, wireless connections, copy and paste, recording, and more.
+- [Vysor Share](/share): give a remote user encrypted access to a device.
+- [Vysor Pro](/pro): high quality mirroring, fullscreen, wireless, audio, recording, and notifications.
+- [How Vysor Works](/architecture): what Vysor runs on the device and why no root is required.
+
+## Need Help?
+
+See the [FAQ](/faq) and [Troubleshooting](/troubleshooting) pages.
