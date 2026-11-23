@@ -34,3 +34,4 @@ After the first USB connection, the device can be switched to wireless mirroring
 
 - iOS mirroring and control are available in the Vysor desktop app.
 - The developer image is signed for the connected device and cached locally after installation.
+- Camera and microphone access is limited while mirroring a physical device. Quit any apps on the device that use the camera or microphone before connecting. Lower-priority apps such as Camera and Voice Memos may record silence or empty video while mirrored, and launching higher-priority apps such as Phone or FaceTime stops the mirroring session. See Apple's [note on handling camera and microphone access conflicts on physical devices](https://developer.apple.com/documentation/xcode/interacting-with-your-app-in-device-hub#Handle-camera-and-microphone-access-conflicts-on-physical-devices).
