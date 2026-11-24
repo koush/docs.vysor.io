@@ -23,7 +23,7 @@ Vysor uses the developer access you explicitly enable on the device:
 
 ## Which features are free, and which need Pro?
 
-Screen mirroring and control of Android and iOS devices, and screenshots, work without a license. The remaining features — high quality mirroring, fullscreen, wireless, screen recording, audio mirroring, and Vysor Share — require [Vysor Pro](/pro). Desktop notifications, drag-and-drop file transfer, and multiple displays are Android-only. A one-time trial of Pro features is offered.
+Screen mirroring and control of Android and iOS devices, and screenshots, work without a license. The remaining features — high quality mirroring, fullscreen, wireless, screen recording, audio mirroring, Vysor Share, and [AI automation (MCP)](/manual/mcp) — require [Vysor Pro](/pro). Desktop notifications, drag-and-drop file transfer, and multiple displays are Android-only. A one-time trial of Pro features is offered.
 
 <!-- TODO(verify): trial details and current purchase options (monthly/annual/lifetime) to be confirmed. -->
 

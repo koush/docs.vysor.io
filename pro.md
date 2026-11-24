@@ -24,8 +24,9 @@ options and trial terms to be confirmed before publishing. -->
 | [Drag and drop files](/manual/drag-and-drop) (Android) |  | ✅ |
 | All displays (Android) |  | ✅ |
 | [Vysor Share](/share) |  | ✅ |
+| [AI automation (MCP)](/manual/mcp) |  | ✅ |
 
-Desktop notifications, drag-and-drop file transfer, and multiple displays are Android-only.
+Desktop notifications, drag-and-drop file transfer, and multiple displays are Android-only. AI automation (MCP) is available in the native desktop app while a device viewer is open.
 
 [Enterprise](/enterprise) adds team licensing and web-based Share access management.
 

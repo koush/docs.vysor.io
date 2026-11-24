@@ -65,6 +65,7 @@ export default defineConfig({
           { text: 'Desktop Notifications', link: '/manual/notifications' },
           { text: 'Device Window', link: '/manual/customize-window' },
           { text: 'Customizing Vysor', link: '/manual/customize' },
+          { text: 'AI Automation (MCP)', link: '/manual/mcp' },
           
         ],
       },

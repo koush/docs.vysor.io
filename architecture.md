@@ -21,3 +21,7 @@ After an initial USB connection, Vysor can reconnect over the local network. And
 ## Vysor Share
 
 [Vysor Share](/share) gives a remote user encrypted access to a device's screen and input over the internet.
+
+## AI Automation (MCP)
+
+The native desktop app can expose the open device viewer as a local [MCP server](/manual/mcp). AI clients use screenshots and input tool calls to operate the device, and the endpoint stops when the viewer closes.
