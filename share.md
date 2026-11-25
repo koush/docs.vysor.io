@@ -33,7 +33,7 @@ By default, anyone with your server link can connect. You can restrict who is al
 
 - **Whitelist.** Only the listed users may connect. Whitelisting uses email addresses, one per line; a domain entry like `@yourcompany.com` allows every user with that email domain.
 - **Open Server.** Anyone with the link may connect.
-- **Vysor Enterprise.** Users belonging to your [Enterprise organization](/enterprise) are allowed; membership is managed with the organization's account tools at [billing.vysor.io](https://billing.vysor.io).
+- **Vysor Enterprise.** Users belonging to your [Enterprise organization](/enterprise) are allowed. Choose **Manage Enterprise** in the [Vysor billing portal](https://billing.v6.vysor.io/) to manage membership.
 
 Users authenticate by signing in to Vysor with their account, and the server verifies each connection against the whitelist before any device access is offered. Removing someone from the whitelist revokes their server access going forward.
 

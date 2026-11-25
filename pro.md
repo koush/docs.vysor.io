@@ -36,10 +36,7 @@ Log in to Vysor and click **Upgrade** to purchase Vysor Pro. Licenses are per-ac
 
 ## Managing Your License
 
-Vysor Pro licenses are provided by a few different sources. Your license type is shown at the bottom of the device list, with a link to manage it:
-
-- **Stripe/PayPal (Individual License):** managed at [billing.clockworkmod.com](https://billing.clockworkmod.com)
-- **Enterprise:** managed at [billing.vysor.io](https://billing.vysor.io)
+Open the [Vysor billing portal](https://billing.v6.vysor.io/) and choose **Manage existing** for an individual subscription or **Manage Enterprise** for a team.
 
 If you have purchased a license in the past, log in with the same account and Vysor will recover it automatically.
 <style scoped>

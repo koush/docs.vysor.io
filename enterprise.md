@@ -17,7 +17,7 @@ Vysor Enterprise licenses teams and organizations, adding organization-wide cont
 
 ## Managing Subscriptions
 
-Enterprise subscriptions are managed at [billing.vysor.io](https://billing.vysor.io).
+Choose **Manage Enterprise** in the [Vysor billing portal](https://billing.v6.vysor.io/) to manage your team's subscription.
 
 ## Use Cases
 

@@ -12,9 +12,4 @@ Subscription renewals are non-refundable. Automatic subscription renewal can be 
 
 ## Managing and Canceling Subscriptions
 
-Subscriptions are managed by the billing service used for the purchase. Your license source is shown at the bottom of the device list, with a link to its management page:
-
-- **Stripe/PayPal (Individual License):** [billing.clockworkmod.com](https://billing.clockworkmod.com)
-- **Enterprise:** [billing.vysor.io](https://billing.vysor.io)
-
-Invoices and receipts are available on the same management pages.
+Open the [Vysor billing portal](https://billing.v6.vysor.io/) and choose **Manage existing** for an individual subscription or **Manage Enterprise** for a team. Sign in with your purchasing or team administrator account to view subscription invoices, update your payment method, or cancel renewal.
